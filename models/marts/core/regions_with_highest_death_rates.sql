@@ -5,7 +5,6 @@ with death_rates as (
 
 ),
 
-
 regions_with_highest_death_rates as (
 
   select death_rates.death_rates,
