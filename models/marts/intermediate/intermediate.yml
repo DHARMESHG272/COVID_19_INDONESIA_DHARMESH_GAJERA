@@ -1,0 +1,17 @@
+
+version: 2
+
+models:
+    - name: locations
+      description: "Locations dbt model"
+      materialized: table
+      columns:
+          - name: location_code
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+
+    - name: covid19_indonesia
+      description: "covid19_indonesia dbt model"
+      materialized: table
